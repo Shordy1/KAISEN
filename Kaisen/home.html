@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaisen</title>
+    <link rel="website icon" type="png" href="/img/9584557.png">
+    <link rel="stylesheet" href="/home.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="/img/logo.png"></a>
+        <div class="toggle"><img src="/img/toggle.png" alt=""></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Expanción de <span>Dominio</span> </h2>
+            <p>Yuji Itadori, un adolescente casi normal que se convierte en el recipiente de una maldición poderosísima
+                y empieza a formarse como hechicero para aprender a controlar sus nuevos poderes.</p>
+            <a href="#" class="play" onclick="toggle();"><img src="/img/play.png">Ver Trailer</a>
+            <div class="slide"></div>
+            <ul class="sci">
+                <li><a href="#"><img src="/img/facebook.png"></a></li>
+                <li><a href="#"><img src="/img/twitter.png"></a></li>
+                <li><a href="#"><img src="/img/instagram.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="/img/TVアニメ『呪術廻戦』「渋谷事変」第2期PV第3弾｜OPテーマ：King Gnu「SPECIALZ」｜毎週木曜夜11時56分～MBS_TBS系列全国28局にて放送中!!.mp4"
+            controls="true"></video>
+        <img src="/img/close.png" class="close" onclick="toggle();">
+    </div>
+    <script type="text/javascript">
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            var vidoe = document.querySelector('video');
+            trailer.classList.toggle('active')
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+
+</html>
